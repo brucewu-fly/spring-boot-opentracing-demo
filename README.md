@@ -2,6 +2,8 @@
 
 ## 编译运行 demo
 ```
+git clone https://github.com/brucewu-fly/spring-boot-opentracing-demo.git
+cd spring-boot-opentracing-demo
 mvn clean package
 java -jar target/spring-boot-opentracing-demo-1.0-SNAPSHOT.jar
 curl http://localhost:8080/hello
