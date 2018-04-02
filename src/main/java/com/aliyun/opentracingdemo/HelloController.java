@@ -12,17 +12,18 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class HelloController {
 
-    @Autowired
-    private RestTemplate restTemplate;
+  @Autowired
+  private RestTemplate restTemplate;
 
-    @RequestMapping("/hello")
-    public String hello() {
-        return "Hello from Spring Boot!";
-    }
+  @RequestMapping("/hello")
+  public String hello() {
+    return "Hello from Spring Boot!";
+  }
 
-    @RequestMapping("/chaining")
-    public String chaining() {
-        ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:8080/hello", String.class);
-        return "Chaining + " + response.getBody();
-    }
+  @RequestMapping("/chaining")
+  public String chaining() {
+    ResponseEntity<String> response = restTemplate
+        .getForEntity("http://localhost:8080/hello", String.class);
+    return "Chaining + " + response.getBody();
+  }
 }
