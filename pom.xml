@@ -43,15 +43,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.uber.jaeger</groupId>
-            <artifactId>jaeger-aliyunlog</artifactId>
-            <version>0.26.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.uber.jaeger</groupId>
-            <artifactId>jaeger-core</artifactId>
-            <version>0.26.0</version>
+            <groupId>com.aliyun.openservices</groupId>
+            <artifactId>aliyun-log-jaeger-sender</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>

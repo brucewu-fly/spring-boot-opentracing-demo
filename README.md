@@ -5,11 +5,8 @@
 git clone https://github.com/brucewu-fly/spring-boot-opentracing-demo.git
 cd spring-boot-opentracing-demo
 mvn clean package
-java -jar target/spring-boot-opentracing-demo-1.0-SNAPSHOT.jar
+export PROJECT=<your_project> ENDPOINT=<your_endpoint> ACCESS_KEY_ID=<your_access_key_id> ACCESS_KEY_SECRET=<your_access_key_secret> LOG_STORE=<your_log_store> && java -jar target/spring-boot-opentracing-demo-1.0-SNAPSHOT.jar
 curl http://localhost:8080/hello
 curl http://localhost:8080/chaining
 ```
-
-## 运行 jaeger
-参阅 https://github.com/aliyun/aliyun-log-jaeger/blob/master/README_CN.md
 

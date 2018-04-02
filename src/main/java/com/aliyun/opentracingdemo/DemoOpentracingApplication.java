@@ -1,9 +1,9 @@
 package com.aliyun.opentracingdemo;
 
+import com.aliyun.openservices.log.jaeger.sender.AliyunLogSender;
 import com.uber.jaeger.Tracer;
 import com.uber.jaeger.reporters.RemoteReporter;
 import com.uber.jaeger.samplers.ConstSampler;
-import com.uber.jaeger.senders.aliyunlog.AliyunLogSender;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
