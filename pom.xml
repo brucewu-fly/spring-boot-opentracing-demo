@@ -45,7 +45,7 @@
         <dependency>
             <groupId>com.aliyun.openservices</groupId>
             <artifactId>aliyun-log-jaeger-sender</artifactId>
-            <version>0.0.3</version>
+            <version>0.0.5</version>
         </dependency>
 
         <dependency>
